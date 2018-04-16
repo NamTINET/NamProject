@@ -1,0 +1,65 @@
+Mdp : Pa$$w0rd
+
+
+
+
+C:\>cd NamProject
+
+C:\NamProject>dir
+ Le volume dans le lecteur C n’a pas de nom.
+ Le numéro de série du volume est 2CF0-12EE
+
+ Répertoire de C:\NamProject
+
+16/04/2018  13:44    <DIR>          .
+16/04/2018  13:44    <DIR>          ..
+               0 fichier(s)                0 octets
+               2 Rép(s)  744 908 763 136 octets libres
+
+C:\NamProject> git config user.email "luongvuhainam@yahoo.com"
+
+C:\NamProject> git config user.name "NamProject"
+
+C:\NamProject> git add planning.doc
+fatal: pathspec 'planning.doc' did not match any files
+
+C:\NamProject> git add planning.doc
+fatal: pathspec 'planning.doc' did not match any files
+
+C:\NamProject> dir
+ Le volume dans le lecteur C n’a pas de nom.
+ Le numéro de série du volume est 2CF0-12EE
+
+ Répertoire de C:\NamProject
+
+16/04/2018  13:44    <DIR>          .
+16/04/2018  13:44    <DIR>          ..
+               0 fichier(s)                0 octets
+               2 Rép(s)  744 908 566 528 octets libres
+
+C:\NamProject> git add planning.doc
+fatal: pathspec 'planning.doc' did not match any files
+
+C:\NamProject> git add planning.doc
+
+C:\NamProject> git commit 'this is the contenent of planning'
+error: pathspec ''this' did not match any file(s) known to git.
+error: pathspec 'is' did not match any file(s) known to git.
+error: pathspec 'the' did not match any file(s) known to git.
+error: pathspec 'contenent' did not match any file(s) known to git.
+error: pathspec 'of' did not match any file(s) known to git.
+error: pathspec 'planning'' did not match any file(s) known to git.
+
+C:\NamProject> git commit -m  "this is the contenent of planning"
+[master (root-commit) 61faf98] this is the contenent of planning
+ 1 file changed, 1 insertion(+)
+ create mode 100644 planning.doc
+
+C:\NamProject> git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 247 bytes | 247.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/NamTINET/NamProject.git
+ * [new branch]      master -> master
+
+C:\NamProject>
