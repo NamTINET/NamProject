@@ -1,3 +1,4 @@
+Password
 Mdp : Pa$$w0rd
 
 
@@ -37,18 +38,9 @@ C:\NamProject> dir
                0 fichier(s)                0 octets
                2 Rép(s)  744 908 566 528 octets libres
 
-C:\NamProject> git add planning.doc
-fatal: pathspec 'planning.doc' did not match any files
 
 C:\NamProject> git add planning.doc
 
-C:\NamProject> git commit 'this is the contenent of planning'
-error: pathspec ''this' did not match any file(s) known to git.
-error: pathspec 'is' did not match any file(s) known to git.
-error: pathspec 'the' did not match any file(s) known to git.
-error: pathspec 'contenent' did not match any file(s) known to git.
-error: pathspec 'of' did not match any file(s) known to git.
-error: pathspec 'planning'' did not match any file(s) known to git.
 
 C:\NamProject> git commit -m  "this is the contenent of planning"
 [master (root-commit) 61faf98] this is the contenent of planning
@@ -63,3 +55,239 @@ To https://github.com/NamTINET/NamProject.git
  * [new branch]      master -> master
 
 C:\NamProject>
+
+
+
+//  add un fichier dans comp de Prof (HUB)
+
+
+
+C:\ibjavaweb>echo "nam" > nam.txt  // creer le fichier qui appellee nam.txt
+
+C:\ibjavaweb> git add nam.txt
+
+C:\ibjavaweb> git commit -m "Bonjour c'est Nam"
+[master ef60fa0] Bonjour c'est Nam
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nam.txt
+
+C:\ibjavaweb> git push
+To https://github.com/thetinyspark/ibjavaweb.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/thetinyspark/ibjavaweb.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\ibjavaweb>git pull
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 3), reused 5 (delta 2), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/thetinyspark/ibjavaweb
+   1f73c36..c7faa98  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ jerome.txt | Bin 0 -> 64 bytes
+ readme.txt | Bin 18 -> 28 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 jerome.txt
+
+C:\ibjavaweb>git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 551 bytes | 551.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/thetinyspark/ibjavaweb.git
+   c7faa98..faa7cb0  master -> master
+
+C:\ibjavaweb>
+
+
+// connecter avec Jerome
+
+C:\>cd NamProject
+
+C:\NamProject> git add .\nam.txt
+
+C:\NamProject> git commit -m "c'est nam"
+[master df3e4af] c'est nam
+ 1 file changed, 4 insertions(+)
+
+C:\NamProject> git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 366 bytes | 366.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/NamTINET/NamProject.git
+   127b425..df3e4af  master -> master
+
+C:\NamProject>
+
+
+
+
+17/04/2018
+
+
+Ubuntu – GIT
+
+Microsoft Windows [version 10.0.16299.251]
+(c) 2017 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\ib>cd Destop\toto> cd ../
+Le chemin d’accès spécifié est introuvable.
+
+C:\Users\ib>cd Desktop
+
+C:\Users\ib\Desktop>cd toto
+Le chemin d’accès spécifié est introuvable.
+
+C:\Users\ib\Desktop> git clone ib@192.168.134.58:/home/ib/my_github/toto.git
+Cloning into 'toto'...
+The authenticity of host '192.168.134.58 (192.168.134.58)' can't be established.
+ECDSA key fingerprint is SHA256:RqQqIOksxe8YHqYc0jiFzwscYLgiZoohOqaqjJ1cE34.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.134.58' (ECDSA) to the list of known hosts.
+ib@192.168.134.58's password:
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (3/3), done.
+
+C:\Users\ib\Desktop> cd toto
+
+C:\Users\ib\Desktop\toto>ls
+'ls' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\ib\Desktop\toto> ls
+'ls' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\ib\Desktop\toto> ls
+'ls' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\ib\Desktop\toto>  start readme.txt
+
+C:\Users\ib\Desktop\toto> git add .
+
+C:\Users\ib\Desktop\toto> git commit -m "the true about him"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ib@WINIB-BKMIN8996.(none)')
+
+C:\Users\ib\Desktop\toto> git config user.email "ib@javaweb.fr"
+
+C:\Users\ib\Desktop\toto> git config user.name "ib"
+
+C:\Users\ib\Desktop\toto> git commit -m "the true about him"
+[master 022f007] the true about him
+ 1 file changed, 2 insertions(+)
+
+C:\Users\ib\Desktop\toto> git push origin master
+ib@192.168.134.58's password:
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To 192.168.134.58:/home/ib/my_github/toto.git
+   2204711..022f007  master -> master
+
+C:\Users\ib\Desktop\toto> git add .
+
+C:\Users\ib\Desktop\toto> git commit -m "the true about him"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\ib\Desktop\toto> dir
+ Le volume dans le lecteur C n’a pas de nom.
+ Le numéro de série du volume est 2CF0-12EE
+
+ Répertoire de C:\Users\ib\Desktop\toto
+
+17/04/2018  13:55    <DIR>          .
+17/04/2018  13:55    <DIR>          ..
+17/04/2018  13:59                47 readme.txt
+               1 fichier(s)               47 octets
+               2 Rép(s)  744 883 642 368 octets libres
+
+C:\Users\ib\Desktop\toto> start .\readme.txt
+
+C:\Users\ib\Desktop\toto>  git add .
+
+C:\Users\ib\Desktop\toto> git commit -m "ajout in readme.txt"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\ib\Desktop\toto> start .\readme.txt
+
+C:\Users\ib\Desktop\toto> git add .
+
+C:\Users\ib\Desktop\toto> git push
+ib@192.168.134.58's password:
+=================================================
+==========Pre push ==============================
+Everything up-to-date
+
+C:\Users\ib\Desktop\toto>
+
+
+18/04/2018 // Algorithmique 
+
+
+
+PS C:\> git clone https://github.com/thetinyspark/ibjavaweb.git
+Cloning into 'ibjavaweb'...
+remote: Counting objects: 254, done.
+remote: Compressing objects: 100% (164/164), done.
+Receiving objects:  67% (171/254)   d 196 (delta 72), pack-reused 0 eceiving objects:  48% (122/254)
+Receiving objects: 100% (254/254), 248.71 KiB | 635.00 KiB/s, done.
+Resolving deltas: 100% (114/114), done.
+PS C:\> cd .\ibjavaweb\
+PS C:\ibjavaweb> git config user.email "luongvuhainam@yahoo.com"
+PS C:\ibjavaweb> git config user.name "NamTINET"
+PS C:\ibjavaweb> git add .
+PS C:\ibjavaweb> git commit -m "c'est nam"
+[master 5000e1a] c'est nam
+ 1 file changed, 25 insertions(+)
+ create mode 100644 algoNam.txt
+PS C:\ibjavaweb> git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/thetinyspark/ibjavaweb
+   0727531..0fd35ef  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ razan_algo.txt | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ create mode 100644 razan_algo.txt
+PS C:\ibjavaweb> git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 788 bytes | 788.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/thetinyspark/ibjavaweb.git
+   0fd35ef..4c23b9b  master -> master
+PS C:\ibjavaweb>
+
+

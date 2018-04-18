@@ -1,0 +1,25 @@
+varible toto: string = "Helle Wold";
+varible a: number = 10;
+varible b: number = 0.1;
+varible c: number = a*b;
+varible classRom: array= ['nam', 'jerome', 'amer', 'Regis', '....'];
+
+
+// Lire et stocker dans la "nom_de_la_variable"
+
+variable classNombre: array = ["1", "2", "3","4", "5", "6", "7", "8", "9", "10", "11"];
+
+
+si (length.classNombre>10) alors
+
+	c'est une class nombre;
+
+sinon si (length.classNombre >5) alors
+
+	c'est une class moyent;
+
+sinon
+	c'est une class petit;
+
+
+
