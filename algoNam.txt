@@ -10,16 +10,16 @@ varible classRom: array= ['nam', 'jerome', 'amer', 'Regis', '....'];
 variable classNombre: array = ["1", "2", "3","4", "5", "6", "7", "8", "9", "10", "11"];
 
 
-si (length.classNombre>10) alors
+si (length(classNombre)>10) alors
 
-	c'est une class nombre;
+	ecrire "c'est une class nombre;
 
-sinon si (length.classNombre >5) alors
+sinon si (length (classNombre) >5) alors
 
-	c'est une class moyent;
+	ecrire "c'est une class moyent";
 
 sinon
-	c'est une class petit;
+	ecrire "c'est une class petit";
 
 
 
